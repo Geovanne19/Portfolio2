@@ -40,7 +40,7 @@ font-size: var(--small-font-size);
     margin-bottom: var(--mb-0-75);
 }
 
-.contato_button {
+.contato_button a {
     color: var(--color1);
     font-size: var(--small-font-size);
     display: flex;
