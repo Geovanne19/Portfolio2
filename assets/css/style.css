@@ -483,10 +483,15 @@ button, input {
     row-gap: 1.8rem;
 }
 
+.habilidades_data {
+    display: flex;
+    align-items: center;
+}
+
 .habilidades_titles {
     display: flex;
-    margin-bottom: var(--mb-0-5);
     align-items: center;
+    transition: .4s;
 }
 
 .habillidades_name {
@@ -498,7 +503,6 @@ button, input {
     font-size: var(--biggest-font-size);
     border-radius: .25rem;
     display: flex;
-    transition: .4s;
 }
 
 .habilidades_icon:hover {
