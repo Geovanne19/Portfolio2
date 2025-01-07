@@ -468,7 +468,7 @@ button, input {
 .habilidades_content {
     background-color: var(--box-color);
     border-radius: .5rem;
-    padding: .5rem;
+    padding: 1.2rem 1rem;
 }
 
 .habilidades [data-content] {
@@ -490,7 +490,7 @@ button, input {
 }
 
 .habillidades_name {
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
 }
 
@@ -498,6 +498,11 @@ button, input {
     font-size: var(--biggest-font-size);
     border-radius: .25rem;
     display: flex;
+    transition: .4s;
+}
+
+.habilidades_icon:hover {
+    transform: scale(1.1);
 }
 
 
