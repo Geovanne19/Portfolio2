@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Geovanne Rodrigues</title>
     <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/sobre.css" />
+    <link rel="stylesheet" href="assets/css/habilidades.css" />
+    <link rel="stylesheet" href="assets/css/projetos.css" />
+    <link rel="stylesheet" href="assets/css/contato.css" />
+    
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
@@ -16,6 +24,9 @@
     />
   </head>
   <body>
+
+    <!-- Sidebar -->
+
     <aside class="sidebar" id="sidebar">
       <nav class="nav">
         <div class="nav_logo">
@@ -50,6 +61,8 @@
     </aside>
 
     <main class="main">
+
+      <!-- Home -->
       <section class="home" id="home">
         <div class="home_container container grid">
           <div class="home_social">
@@ -75,8 +88,7 @@
               solução precisa.
             </p>
             <a href="#sobre" class="button"
-              ><i class="uil uil-user button_icon"></i>Mais sobre mim</a
-            >
+              ><i class="uil uil-user button_icon"></i>Mais sobre mim</a>
           </div>
 
           <div class="my_info">
@@ -107,8 +119,9 @@
         </div>
       </section>
 
+      <!-- Sobre -->
       <section class="sobre section" id="sobre">
-        <h2 data-heading="My Intro" class="section_title">Sobre Mim</h2>
+        <h2 data-heading="Me conheça" class="section_title">Sobre Mim</h2>
 
         <div class="sobre_container container grid">
           <img src="assets/img/img-sobre.jpg" alt="" class="sobre_img" />
@@ -116,10 +129,7 @@
           <div class="sobre_data">
             <h3 class="sobre_heading">Desenvolvedor Front End</h3>
             <p class="sobre_description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-              iusto animi officia eaque magnam odit autem omnis quia, aut
-              consectetur blanditiis assumenda eos voluptatibus voluptatem?
-              Iusto sapiente nostrum ipsa tempore.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias distinctio numquam consectetur voluptates sit reprehenderit omnis odit, cum molestiae similique quis obcaecati harum illum ab ducimus quo veritatis! Esse, quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia atque ducimus quo velit molestias quaerat repellat nesciunt eligendi, accusamus minus recusandae quos voluptatum itaque saepe eveniet doloribus sunt amet dicta! lorem
             </p>
             <div class="sobre_info grid">
               <div class="sobre_box">
@@ -129,21 +139,23 @@
               </div>
               <div class="sobre_box">
                 <i class="sobre_icon uil uil-suitcase-alt"></i>
-                <h3 class="sobre_title">Agyigfu</h3>
-                <span class="sobre_subtitle">fuy</span>
+                <h3 class="sobre_title">Projetos CEIA-UFG</h3>
+                <span class="sobre_subtitle">1 ano</span>
               </div>
               <div class="sobre_box">
                 <i class="sobre_icon uil uil-headphones-alt"></i>
-                <h3 class="sobre_title">Gjiug</h3>
-                <span class="sobre_subtitle">Rhn</span>
+                <h3 class="sobre_title">Outros</h3>
+                <span class="sobre_subtitle">-</span>
               </div>
             </div>
+            <a href="#contato" class="button"><i class="uil uil-navigator button_icon"></i>Contate-me</a>
           </div>
         </div>
       </section>
 
+      <!-- Habilidades -->
       <section class="habilidades" id="habilidades">
-        <h2 data-heading="Minhas Habilidades" class="section_title">
+        <h2 data-heading="Conhecimentos" class="section_title">
           Minhas Habilidades
         </h2>
 
@@ -244,7 +256,9 @@
               <div class="habilidades_list grid">
                 <div class="habilidades_data">
                   <div class="habilidades_titles">
-                    <span class="habilidades_icon"><i></i></span>
+                    <span class="habilidades_icon"
+                      ><i class="fas fa-c"></i>
+                    </span>
                     <h3 class="habilidades_name">C</h3>
                   </div>
                 </div>
@@ -269,8 +283,238 @@
           </div>
         </div>
       </section>
+
+      <!-- Projetos -->
+      <section class="projetos section" id="projetos">
+        <h2 data-heading="Meu Portifólio" class="section_title">Projetos</h2>
+
+        <div class="projetos_filters">
+            <span class="projeto_item active-projeto" data-filter="all">Todos</span>
+            <span class="projeto_item" data-filter=".web">Web</span>
+            <span class="projeto_item" data-filter=".app">App</span>
+            <span class="projeto_item" data-filter=".design">Design</span>
+        </div>
+
+        <div class="projetos_container container grid">
+            <div class="projetos_card mix web">
+                <img src="assets/img/background001.jpg" alt="" class="projetos_img">
+                <h3 class="projetos_title">Web Design</h3>
+                <span class="projetos_button">Ver mais
+                    <i class="uil uil-arrow-right projetos_button-icon"></i>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class="details_title">The services provide for design</h3>
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique atque
+                        earum.</p>
+                    <ul class="details_info">
+                        <li>Criado - <span>4 dez 2020</span></li>
+                        <li>Tecnologias - <span>html css</span></li>
+                        <li>Role - <span>frontend</span></li>
+                        <li>Vizualizar - <span><a href="#">www.domain.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="projetos_card mix app">
+                <img src="assets/img/background001.jpg" alt="" class="projetos_img">
+                <h3 class="projetos_title">App Design</h3>
+                <span class="projetos_button">Ver mais
+                    <i class="uil uil-arrow-right projetos_button-icon"></i>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class="details_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati!</h3>
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique atque
+                        earum.</p>
+                    <ul class="details_info">
+                        <li>Criado - <span>4 dez 2020</span></li>
+                        <li>Tecnologias - <span>html css</span></li>
+                        <li>Role - <span>frontend</span></li>
+                        <li>Vizualizar - <span><a href="#">www.domain.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="projetos_card mix design">
+                <img src="assets/img/background001.jpg" alt="" class="projetos_img">
+                <h3 class="projetos_title">Brand Design</h3>
+                <span class="projetos_button">Ver mais
+                    <i class="uil uil-arrow-right projetos_button-icon"></i>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class="details_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</h3>
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique atque
+                        earum.</p>
+                    <ul class="details_info">
+                        <li>Criado - <span>4 dez 2020</span></li>
+                        <li>Tecnologias - <span>html css</span></li>
+                        <li>Role - <span>frontend</span></li>
+                        <li>Vizualizar - <span><a href="#">www.domain.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="projetos_card mix app">
+                <img src="assets/img/background001.jpg" alt="" class="projetos_img">
+                <h3 class="projetos_title">App Design</h3>
+                <span class="projetos_button">Ver mais
+                    <i class="uil uil-arrow-right projetos_button-icon"></i>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class="details_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate?</h3>
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique atque
+                        earum.</p>
+                    <ul class="details_info">
+                        <li>Criado - <span>4 dez 2020</span></li>
+                        <li>Tecnologias - <span>html css</span></li>
+                        <li>Role - <span>frontend</span></li>
+                        <li>Vizualizar - <span><a href="#">www.domain.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="projetos_card mix web">
+                <img src="assets/img/background001.jpg" alt="" class="projetos_img">
+                <h3 class="projetos_title">App Design</h3>
+                <span class="projetos_button">Ver mais
+                    <i class="uil uil-arrow-right projetos_button-icon"></i>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class="details_title">Lorem ipsum dolor sit amet.</h3>
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique atque
+                        earum.</p>
+                    <ul class="details_info">
+                        <li>Criado - <span>4 dez 2020</span></li>
+                        <li>Tecnologias - <span>html css</span></li>
+                        <li>Role - <span>frontend</span></li>
+                        <li>Vizualizar - <span><a href="#">www.domain.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="projetos_card mix design">
+                <img src="assets/img/background001.jpg" alt="" class="projetos_img">
+                <h3 class="projetos_title">Web Design</h3>
+                <span class="projetos_button">Ver mais
+                    <i class="uil uil-arrow-right projetos_button-icon"></i>
+                </span>
+                <div class="portfolio_item-details">
+                    <h3 class="details_title">Lorem ipsum dolor sit amet.</h3>
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique atque
+                        earum.</p>
+                    <ul class="details_info">
+                        <li>Criado - <span>4 dez 2020</span></li>
+                        <li>Tecnologias - <span>html css</span></li>
+                        <li>Role - <span>frontend</span></li>
+                        <li>Vizualizar - <span><a href="#">www.domain.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Popup -->
+
+      <div class="portfolio_popup">
+        <div class="portfolio_popup-inner">
+          <div class="portfolio_popup-content grid">
+            <span class="portfolio_popup-close"><i class="uil uil-times"></i></span>
+            <div class="pp_thumbnail">
+              <img src="assets/img/background001.jpg" class="portfolio_popup-img" alt="">
+            </div>
+            <div class="portfolio_popup-info">
+              <div class="portfolio_popup-subtitle">
+                Featured - <span>Design</span>
+              </div>
+              <div class="portfolio_popup-body">
+                <h3 class="details_title">App for tecnology & services</h3>
+                <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique atque
+                  earum.</p>
+                <ul class="details_info">
+                  <li>Criado - <span>4 dez 2020</span></li>
+                  <li>Tecnologias - <span>html css</span></li>
+                  <li>Role - <span>frontend</span></li>
+                  <li>Vizualizar - <span><a href="#">www.domain.com</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="contato section" id="contato">
+        <h2 data-heading="Fale comigo" class="section_title">Contato</h2>
+
+        <div class="contato_container container grid">
+          <div class="contato_content">
+            <div class="contato_info">
+              <div class="contato_card">
+                <i class="uil uil-envelope-edit contato_card-icon"></i>
+                <h3 class="contato_card-data">Email</h3>
+                <span class="contato-subtitle">geovannerodrigues12@gmail.com</span>
+                <span class="contato_button">
+                  Write me <i class="uil uil-arrow-right contato_button-icon">
+                  </i>
+                </span>
+              </div>
+
+              <div class="contato_card">
+                <i class="uil uil-whatsapp contato_card-icon"></i>
+                <h3 class="contato_card-data">Whatsapp</h3>
+                <span class="contato-subtitle">62 98545-3345</span>
+                <span class="contato_button">
+                  Write me <i class="uil uil-arrow-right contato_button-icon">
+                  </i>
+                </span>
+              </div>
+
+              <div class="contato_card">
+                <i class="uil uil-linkedin contato_card-icon"></i>
+                <h3 class="contato_card-data">Linkedin</h3>
+                <span class="contato-subtitle">Geovanne Rodrigues</span>
+                <span class="contato_button">
+                  Write me <i class="uil uil-arrow-right contato_button-icon">
+                  </i>
+                </span>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="contato_content">
+            <form action="" class="contato_form">
+              <div class="input_container">
+                <input class="input" type="text">
+                <label for="">Nome de usuário</label>
+                <span>Nome de usuário</span>
+              </div>
+
+              <div class="input_container">
+                <input class="input" type="email">
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+
+              <div class="input_container">
+                <input class="input" type="tel">
+                <label for="">Número de celular</label>
+                <span>Número de celular</span>
+              </div>
+
+              <div class="input_container textarea">
+                <textarea class="input" name="" id=""></textarea>
+                <label for="">Mensagem</label>
+                <span>Mensagem</span>
+              </div>
+
+              <button type="submit" class="button"><i class="uil uil-navigator button_icon"></i>Me envie uma mensagem</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
+
+    <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

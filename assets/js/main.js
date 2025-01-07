@@ -18,3 +18,59 @@ tabs.forEach((tab) => {
     tab.classList.add("habilidades_active");
   });
 });
+
+let mixerPortfolio = mixitup('.projetos_container', {
+  selectors: {
+    target: '.projetos_card'
+  },
+  animation: {
+    duration: 300
+  }
+})
+
+const linkProjeto = document.querySelectorAll(".projeto_item")
+
+function activeProjeto() {
+  linkProjeto.forEach(l => l.classList.remove('active-projeto'))
+  this.classList.add('active-projeto')
+}
+
+linkProjeto.forEach(l => l.addEventListener("click", activeProjeto))
+
+document.addEventListener("click", (e) => {
+  if(e.target.classList.contains("projetos_button")) {
+    togglePortfolioPopup()
+    portfolioItemDetails(e.target.parentElement)
+  }
+})
+
+function togglePortfolioPopup() {
+  document.querySelector(".portfolio_popup").classList.toggle("open")
+}
+
+document.querySelector(".portfolio_popup-close").addEventListener("click", togglePortfolioPopup)
+
+function portfolioItemDetails(portfolioItem) {
+  document.querySelector(".pp_thumbnail img").src = portfolioItem.querySelector(".projetos_img").src;
+  document.querySelector(".portfolio_popup-subtitle span").innerHTML = portfolioItem.querySelector(".projetos_title").innerHTML;
+  document.querySelector(".portfolio_popup-body").innerHTML = portfolioItem.querySelector(".portfolio_item-details").innerHTML;
+}
+
+const inputs = document.querySelectorAll(".input")
+
+function focusFunc() {
+  let parent = this.parentNode
+  parent.classList.add("focus")
+}
+
+function blurFunc() {
+  let parent = this.parentNode
+  if(this.value == "") {
+    parent.classList.remove("focus")
+  }
+}
+
+inputs.forEach((input)=> {
+  input.addEventListener("focus", focusFunc)
+  input.addEventListener("blur", blurFunc)
+})

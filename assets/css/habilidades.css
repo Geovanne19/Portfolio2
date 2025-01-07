@@ -1,0 +1,95 @@
+@import url("global.css");
+
+/* Habilidades */
+
+.habilidades {
+    padding: 6.5rem 0 2rem;
+}
+
+.habilidades_container {
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.habilidades_header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.habilidades_header:not(:last-child) {
+    margin-bottom: var(--mb-2-5);
+}
+
+.habilidades_icon,
+.habilidades_arrow {
+    font-size: 2rem;
+    color: var(--color1);
+}
+
+.habilidades_icon {
+    margin-right: var(--mb-0-75);
+}
+
+.habilidades_title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.habilidades_subtitle {
+    font-size: var(--small-font-size);
+}
+
+.habilidades_arrow {
+    margin-left: auto;
+}
+
+.habilidades_active .habilidades_arrow {
+    transform: rotate(-90deg);
+    transition: 0.3s;
+}
+
+.habilidades_content {
+    background-color: var(--box-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.habilidades [data-content] {
+    display: none;
+}
+
+.habilidades_active[data-content] {
+    display: block;
+}
+
+.habilidades_list {
+    row-gap: 1.8rem;
+}
+
+.habilidades_data {
+    display: flex;
+    align-items: center;
+}
+
+.habilidades_titles {
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.habillidades_name {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.habilidades_icon {
+    font-size: var(--biggest-font-size);
+    border-radius: 0.25rem;
+    display: flex;
+}
+
+.habilidades_icon:hover {
+    transform: scale(1.1);
+}
