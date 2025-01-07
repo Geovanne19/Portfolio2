@@ -3,150 +3,151 @@
 /* Contato */
 
 .contato_container {
-    grid-template-columns: 300px 340px;
-    column-gap: 3rem;
-    justify-content: center;
-    align-items: center;
+  grid-template-columns: 300px 340px;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .contato_info {
-    display: grid;
-    row-gap: 1rem;
+  display: grid;
+  row-gap: 1rem;
 }
 
 .contato_card {
-    background-color: var(--box-color);
-    padding: 1rem;
-    border-radius: .5rem;
-    text-align: center;
+  background-color: var(--box-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
 }
 
 .contato_card-icon {
-    font-size: 1.8rem;
-    color: var(--title_color);
-    margin-bottom: var(--mb-0-25);
+  font-size: 1.8rem;
+  color: var(--title_color);
+  margin-bottom: var(--mb-0-25);
 }
 
-.contato_card-title, .contato_card-data {
-font-size: var(--small-font-size);
+.contato_card-title,
+.contato_card-data {
+  font-size: var(--small-font-size);
 }
 
 .contato_card-title {
-    font-weight: var(--font-medium);
+  font-weight: var(--font-medium);
 }
 
 .contato_card-data {
-    display: block;
-    margin-bottom: var(--mb-0-75);
+  display: block;
+  margin-bottom: var(--mb-0-75);
 }
 
 .contato_button a {
-    color: var(--color1);
-    font-size: var(--small-font-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: .25rem;
-    cursor: pointer;
+  color: var(--color1);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
 }
 
 .contato_button-icon {
-    font-size: 1rem;
-    transition: .3s;
+  font-size: 1rem;
+  transition: 0.3s;
 }
 
 .contato_button:hover .projetos_button-icon {
-    transform: translateX(.25rem);
+  transform: translateX(0.25rem);
 }
 
 .input_container {
-    position: relative;
-    margin-top: .1rem;
-    margin-bottom: 1.9rem;
+  position: relative;
+  margin-top: 0.1rem;
+  margin-bottom: 1.9rem;
 }
 
 .input {
-    width: 100%;
-    border: 2px solid var(--text-color);
-    background-color: transparent;
-    padding: .6rem 1.2rem;
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    font-size: var(--normal-font-size);
-    letter-spacing: .5px;
-    outline: none;
-    border-radius: .5rem;
-    transition: .4s ease;
+  width: 100%;
+  border: 2px solid var(--text-color);
+  background-color: transparent;
+  padding: 0.6rem 1.2rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+  letter-spacing: 0.5px;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: 0.4s ease;
 }
 
 textarea.input {
-    padding: .8rem 1.2rem;
-    min-height: 140px;
-    border-radius: .5rem;
-    resize: none;
+  padding: 0.8rem 1.2rem;
+  min-height: 140px;
+  border-radius: 0.5rem;
+  resize: none;
 }
 
 .input_container label {
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    transform: translateY(-50%);
-    padding: 0 .4rem;
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: var(--font-medium);
-    pointer-events: none;
-    z-index: 1000;
-    transition: .5s;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: var(--font-medium);
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
 }
 
-.input_container.textarea label{
-    top: 1rem;
-    transform: translateY(0);
+.input_container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
 }
 
 .input_container span {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    color: transparent;
-    transform: translateY(-50%);
-    font-size: var(--small-font-size);
-    padding: 0 .4rem;
-    pointer-events: none;
-    z-index: 500;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  color: transparent;
+  transform: translateY(-50%);
+  font-size: var(--small-font-size);
+  padding: 0 0.4rem;
+  pointer-events: none;
+  z-index: 500;
 }
 
-.input_container span::before, 
+.input_container span::before,
 .input_container span::after {
-    content: '';
-    position: absolute;
-    width: 10%;
-    height: 5px;
-    opacity: 0;
-    background-color: var(--background-color);
-    top: 50%;
-    transform: translateY(-50%);
-    transition: .3s;
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 5px;
+  opacity: 0;
+  background-color: var(--background-color);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
 }
 
 .input_container span::before {
-    left: 50%;
+  left: 50%;
 }
 
 .input_container span::after {
-    right: 50%;
+  right: 50%;
 }
 
 .input_container.focus label {
-    top: 0;
-    transform: translateY(-50%);
-    left: 25px;
-    font-size: var(--smaller-font-size);
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: var(--smaller-font-size);
 }
 
 .input_container.focus span::before,
 .input_container.focus span::after {
-    width: 50%;
-    opacity: 1;
+  width: 50%;
+  opacity: 1;
 }
