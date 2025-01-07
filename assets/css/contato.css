@@ -97,7 +97,7 @@ textarea.input {
   font-size: 1rem;
   font-weight: var(--font-medium);
   pointer-events: none;
-  z-index: 1000;
+  z-index: 15;
   transition: 0.5s;
 }
 
@@ -115,7 +115,7 @@ textarea.input {
   font-size: var(--small-font-size);
   padding: 0 0.4rem;
   pointer-events: none;
-  z-index: 500;
+  z-index: var(--z-fixed);
 }
 
 .input_container span::before,

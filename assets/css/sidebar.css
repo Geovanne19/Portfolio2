@@ -7,7 +7,8 @@
   width: 100px;
   height: 100vh;
   background-color: var(--box-color);
-  border-right: 1px solid var(--box-color);
+  border-right: 1px solid #2b2e3f;
+  transition: .5s;
 }
 
 .nav_logo {
@@ -69,6 +70,31 @@
 
 .social-share {
   font-size: 1.5rem;
+}
+
+.nav_toggle {
+  height: 32px;
+  width: 36px;
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  top: 2rem;
+  font-size: 1.2rem;
+  border-radius: .25rem;
+  background-color: var(--color1);
+  color: var(--title-color);
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.nav_close {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  cursor: pointer;
+  display: none;
 }
 
 .nav_link.active-link,
