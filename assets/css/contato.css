@@ -3,8 +3,8 @@
 /* Contato */
 
 .contato_container {
-  grid-template-columns: 300px 340px;
-  column-gap: 3rem;
+  grid-template-columns: repeat(2, 380px);
+  gap: 3rem;
   justify-content: center;
   align-items: center;
 }
@@ -60,7 +60,7 @@
   transform: translateX(0.25rem);
 }
 
-.input_container {
+/* .input_container {
   position: relative;
   margin-top: 0.1rem;
   margin-bottom: 1.9rem;
@@ -72,7 +72,7 @@
   background-color: transparent;
   padding: 0.6rem 1.2rem;
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: 300;
   font-size: var(--normal-font-size);
   letter-spacing: 0.5px;
   outline: none;
@@ -150,4 +150,4 @@ textarea.input {
 .input_container.focus span::after {
   width: 50%;
   opacity: 1;
-}
+} */

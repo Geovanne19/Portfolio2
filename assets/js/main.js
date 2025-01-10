@@ -1,3 +1,5 @@
+// Função para alternar tipos de habilidades
+
 const tabs = document.querySelectorAll("[data-target]"),
   tabContent = document.querySelectorAll("[data-content]");
 
@@ -19,6 +21,8 @@ tabs.forEach((tab) => {
   });
 });
 
+// Função do filtro de habilidades
+
 let mixerPortfolio = mixitup(".projetos_container", {
   selectors: {
     target: ".projetos_card",
@@ -27,6 +31,8 @@ let mixerPortfolio = mixitup(".projetos_container", {
     duration: 300,
   },
 });
+
+//
 
 const linkProjeto = document.querySelectorAll(".projeto_item");
 
@@ -118,3 +124,10 @@ if(navClose) {
     navMenu.classList.remove('show-sidebar')
   })
 }
+
+function toggleAddPopup() {
+  document.querySelector(".add_popup").classList.toggle("open");
+}
+
+document.querySelector('.nav_add').addEventListener('click', toggleAddPopup)
+document.querySelector(".add_popup-close").addEventListener("click", toggleAddPopup);

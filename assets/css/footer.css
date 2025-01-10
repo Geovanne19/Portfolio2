@@ -13,7 +13,7 @@
 
 .footer_bg {
   background-color: var(--box-color);
-  padding: 3rem 0 3.5rem;
+  padding: 2rem 0;
 }
 
 .footer_title {
@@ -31,7 +31,7 @@
   column-gap: 2rem;
 }
 
-.footer_link {
+.footer_link:hover {
   color: var(--color1);
 }
 

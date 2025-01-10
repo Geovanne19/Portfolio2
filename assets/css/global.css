@@ -304,7 +304,7 @@ input {
 
   .contato_container {
     grid-template-columns: 360px;
-    row-gap: 3rem;
+    row-gap: 1rem;
   }
 
   .footer_container {
