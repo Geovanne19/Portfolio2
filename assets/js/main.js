@@ -78,6 +78,7 @@ function blurFunc() {
   let parent = this.parentNode;
   if (this.value == "") {
     parent.classList.remove("focus");
+    
   }
 }
 
@@ -127,7 +128,49 @@ if(navClose) {
 
 function toggleAddPopup() {
   document.querySelector(".add_popup").classList.toggle("open");
+  limpaCampos()
+  const error_message = document.querySelector(".error_message");
+  error_message.classList.remove("show"); 
+
+  const form_add_popup = document.querySelector(".form-add_popup_login")
+  form_add_popup.classList.remove("hide")
+
+  const form_add = document.querySelector(".form_add")
+  form_add.classList.remove("show")
 }
 
 document.querySelector('.nav_add').addEventListener('click', toggleAddPopup)
 document.querySelector(".add_popup-close").addEventListener("click", toggleAddPopup);
+
+function authenticateUser() {
+  event.preventDefault();
+
+  const usuario = document.querySelector(".input[type='text']").value;
+  const senha = document.querySelector(".input[type='password']").value;
+  const form_add_popup_login = document.querySelector(".form-add_popup_login")
+  const form_add = document.querySelector(".form_add")
+
+  const error_message = document.querySelector(".error_message");
+
+  if (usuario === '' && senha === '') {
+    error_message.classList.remove("show");
+    form_add_popup_login.classList.add("hide")
+    form_add.classList.add("show")
+  } else {
+    error_message.classList.add("show"); 
+    limpaCampos()
+  }
+}
+
+function limpaCampos() {
+  const inputUsuario = document.querySelector(".input[type='text']");
+  const inputSenha = document.querySelector(".input[type='password']");
+  
+  const usuario = inputUsuario.value;
+  const senha = inputSenha.value;
+
+  inputUsuario.value = "";
+  inputSenha.value = ""; 
+}
+
+

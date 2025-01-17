@@ -187,11 +187,6 @@ input {
     transform: translateX(0);
   }
 
-  .nav_logo,
-  .btn_share {
-    display: none;
-  }
-
   .nav_menu {
     height: 100%;
     width: 100%;
@@ -285,6 +280,12 @@ input {
 
   .details_title {
     margin-bottom: var(--mb-0-75);
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .home {
+    background-position: -230px center;
   }
 }
 
