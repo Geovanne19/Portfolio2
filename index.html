@@ -53,33 +53,33 @@
           <button type="submit" class="button">Submeter</button>
         </form>
 
-        <form class="form_add">
+        <form class="form_add" onsubmit="addProjeto(event)">
           <div class="input_container focus">
-            <input type="file" class="input" id="thumbnail" />
+            <input id="thumb" type="file" class="input" id="thumbnail" />
             <label for="thumbnail">Thumbnail</label>
             <span>Thumbnail</span>
           </div>
         
           <div class="input_container">
-            <input type="text" class="input" id="nome" />
-            <label for="nome">Nome</label>
-            <span>Nome</span>
+            <input id="title" type="text" class="input" id="nome" />
+            <label for="nome">Título</label>
+            <span>Título</span>
           </div>
         
           <div class="input_container">
-            <textarea class="input" id="descricao"></textarea>
+            <textarea id="description" class="input" id="descricao"></textarea>
             <label for="descricao">Descrição</label>
             <span>Descrição</span>
           </div>
         
           <div class="input_container focus">
-            <input type="date" class="input" id="data" />
+            <input id="date" type="date" class="input" id="data" />
             <label for="data">Data</label>
             <span>Data</span>
           </div>
         
           <div class="input_container focus">
-            <select class="input" id="tipo">
+            <select id="type" class="input" id="tipo">
               <option value="tipo1">Tipo 1</option>
               <option value="tipo2">Tipo 2</option>
               <option value="tipo3">Tipo 3</option>
@@ -89,13 +89,13 @@
           </div>
         
           <div class="input_container">
-            <input type="text" class="input" id="tecnologias" />
+            <input id="techs" type="text" class="input" id="tecnologias" />
             <label for="tecnologias">Tecnologias</label>
             <span>Tecnologias</span>
           </div>
         
           <div class="input_container">
-            <input type="url" class="input" id="dominio" />
+            <input id="domain" type="url" class="input" id="dominio" />
             <label for="dominio">Domínio</label>
             <span>Domínio</span>
           </div>
